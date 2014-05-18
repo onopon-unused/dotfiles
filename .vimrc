@@ -1,5 +1,5 @@
-
-set compatible
+" NEOBUNDLE
+set nocompatible
 filetype off
 if has('vim_starting')
   set runtimepath+=~/.vim/bundle/neobundle.vim
@@ -9,6 +9,7 @@ call neobundle#rc(expand('~/.vim/bundle'))
 NeoBundle "https://github.com/nanotech/jellybeans.vim.git"
 NeoBundle "https://github.com/vim-scripts/hybrid.vim.git"
 filetype plugin indent on
+syntax on
 let mapleader = ','
 noremap j gj
 noremap k gk
