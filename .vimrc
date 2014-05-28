@@ -10,6 +10,8 @@ NeoBundle 'https://github.com/nanotech/jellybeans.vim.git'
 NeoBundle 'https://github.com/vim-scripts/hybrid.vim.git'
 NeoBundle 'vim-jp/vimdoc-ja'
 NeoBundle 'thinca/vim-quickrun'
+NeoBundle 'Lokaltog/vim-powerline'
+NeoBundle 'scrooloose/nerdtree'
 call neobundle#end()
 filetype plugin indent on
 syntax on
