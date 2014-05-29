@@ -46,3 +46,6 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 set scrolloff=20
+
+" INSESRT時にバックスペースを利用可能にする
+set backspace=indent,eol,start
