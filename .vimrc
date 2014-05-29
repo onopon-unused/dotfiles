@@ -1,5 +1,5 @@
 set fileencodings=utf-8,euc-jp,cp932
-"NEOBUNDLv
+"NEOBUNDL
 set nocompatible
 filetype off
 if has('vim_starting')
@@ -11,7 +11,12 @@ NeoBundle 'https://github.com/vim-scripts/hybrid.vim.git'
 NeoBundle 'vim-jp/vimdoc-ja'
 NeoBundle 'thinca/vim-quickrun'
 NeoBundle 'Lokaltog/vim-powerline'
-NeoBundle 'scrooloose/nerdtree'
+" NeoBundle 'scrooloose/nerdtree'
+NeoBundle 'Shougo/unite.vim'
+NeoBundle 'Shougo/neocomplcache'
+NeoBundle 'tomtom/tcomment_vim'
+NeoBundle 'nathanaelkane/vim-indent-guides'
+" NeoBundle 'vim-scripts/opsplorer'
 call neobundle#end()
 filetype plugin indent on
 syntax on
@@ -25,9 +30,18 @@ noremap <Down> gj
 noremap <Up> gk
 nnoremap <Leader>ev :tabnew $HOME/.vimrc<CR>
 nnoremap <Leader>rv :source $HOME/.vimrc<CR>
+
+
+" 行番号の表示
 set number
+
+" 現在の行表示
 set cursorline
+
+" 常時ステータスライン表示
+set laststatus=2
 "set list
+
 set tabstop=2
 set shiftwidth=2
 set expandtab
