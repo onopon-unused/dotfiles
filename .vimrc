@@ -40,6 +40,13 @@ noremap gj j
 noremap <Down> gj
 noremap <Up> gk
 
+" Ctrl+eと$の置き換え(Ctrl+eでその行の最後の文字にジャンプ)
+noremap <C-E> $
+noremap $ <C-E>
+
+" Ctrl+a と0のnoremap（Ctrl+aでその行の最初の文字にジャンプ)
+noremap <C-A> 0
+
 " .vimrcを新しいタブで開く
 nnoremap <Leader>ev :tabnew $HOME/.vimrc<CR>
 
