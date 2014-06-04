@@ -17,6 +17,7 @@ NeoBundle 'Shougo/neocomplcache'
 NeoBundle 'tomtom/tcomment_vim'
 NeoBundle 'nathanaelkane/vim-indent-guides'
 " NeoBundle 'vim-scripts/opsplorer'
+NeoBundle 'c9s/perlomni.vim'
 call neobundle#end()
 filetype plugin indent on
 syntax on
@@ -159,4 +160,4 @@ autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 
 " For perlomni.vim setting.
 " https://github.com/c9s/perlomni.vim
-"vlet g:neocomplcache_omni_patterns.perl = '\h\w*->\h\w*\|\h\w*::'
+" let g:neocomplcache_omni_patterns.perl = '\h\w*->\h\w*\|\h\w*::'
