@@ -8,6 +8,8 @@ endif
 call neobundle#begin(expand('~/.vim/bundle'))
 NeoBundle 'https://github.com/nanotech/jellybeans.vim.git'
 NeoBundle 'https://github.com/vim-scripts/hybrid.vim.git'
+NeoBundle 'tomasr/molokai'
+NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'vim-jp/vimdoc-ja'
 NeoBundle 'thinca/vim-quickrun'
 NeoBundle 'Lokaltog/vim-powerline'
@@ -24,6 +26,8 @@ syntax on
 
 " 入っていないプラグインをチェックする
 NeoBundleCheck
+
+colorscheme elflord
 
 " <Leaderを「,」に
 let mapleader = ','
@@ -55,13 +59,27 @@ set cursorline
 set laststatus=2
 "set list
 
-set tabstop=2
-set shiftwidth=2
+set tabstop=4
+set shiftwidth=4
 set expandtab
 set scrolloff=20
 
 " INSESRT時にバックスペースを利用可能にする
 set backspace=indent,eol,start
+
+
+" ##############################
+" ####### indent-guides ########
+" ##############################
+hi IndentGuidesOdd  ctermbg=black
+hi IndentGuidesEven ctermbg=darkgrey
+set ts=2 sw=2 et
+let g:indent_guides_start_level=4
+let g:indent_guides_auto_colors=1
+" autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd   ctermbg=110
+" autocmd VimEnter,Colorscheme * :hi IndentGuidesEven  ctermbg=140
+let g:indent_guides_enable_on_vim_startup=1
+let g:indent_guides_guide_size=1
 
 
 " ##############################
